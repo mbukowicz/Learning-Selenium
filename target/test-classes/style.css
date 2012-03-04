@@ -1,0 +1,34 @@
+h1 {
+    font-size: 25px;
+    margin: 15px 10px 10px 10px;
+    color: #259;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.example {
+    margin: 10px;
+    padding: 10px 0;
+    border-top: 1px dashed #25E;
+    display: block;
+    clear: both;
+}
+
+label {
+    float: left;
+    width: 100px;
+    clear: left;
+}
+input, select {
+    float: left;
+    width: 150px;
+    margin-bottom: 3px;
+}
+input.submit, button, select {
+    clear: both;
+    width: 255px;   
+    margin-bottom: 10px;
+}

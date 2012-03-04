@@ -1,0 +1,4 @@
+You can run specific test by typing in your commandline
+mvn -Dtest=<name_of_test> test
+Example:
+mvn -Dtest=Selenium1 test
