@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 public class Selenium2 {
 
     @Test
-    public void selenium1() {
+    public void selenium2() {
         WebDriver driver = new FirefoxDriver();
 
         String htmlPath = this.createPathToHtml("selenium2.html");
