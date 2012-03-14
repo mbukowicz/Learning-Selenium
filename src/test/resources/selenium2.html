@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Selenium</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"> </script>
+        <script type="text/javascript" src="selenium2.js"> </script>
+    </head>
+    <body>
+        <h1>Learning Selenium (part 2)</h1>
+        <div id="form-example" class="example">
+            <h2>Users</h2>
+            <div id="filter-by-role">Show only users with role:<br />
+                <input type="checkbox" checked="checked" value="Admin" />Admin<br />
+                <input type="checkbox" checked="checked" value="Moderator" />Moderator<br />
+                <input type="checkbox" checked="checked" value="User"/>User
+            </div>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>testuser1@example.com</td>
+                    <td>
+                        <select id="role_1">
+                            <option>Admin</option>
+                            <option>Moderator</option>
+                            <option>User</option>
+                        </select>
+                    </td>
+                    <td><a href="#">Edit</a> <a href="#">Remove</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>testuser2@example.com</td>
+                    <td>
+                        <select id="role_2">
+                            <option>Admin</option>
+                            <option>Moderator</option>
+                            <option>User</option>
+                        </select>
+                    </td>
+                    <td><a href="#">Edit</a> <a href="#">Remove</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>testuser3@example.com</td>
+                    <td>
+                        <select id="role_3">
+                            <option>Admin</option>
+                            <option>Moderator</option>
+                            <option selected="selected">User</option>
+                        </select>
+                    </td>
+                    <td><a href="#">Edit</a> <a href="#">Remove</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>testuser4@example.com</td>
+                    <td>
+                        <select id="role_4">
+                            <option>Admin</option>
+                            <option selected="selected">Moderator</option>
+                            <option>User</option>
+                        </select>
+                    </td>
+                    <td><a href="#">Edit</a> <a href="#">Remove</a></td>
+                </tr>
+            </table>
+            <div id="save-discard">
+                <button>Save</button>
+                <button>Discard</button>
+            </div>
+        </div>
+    </body>
+</html>

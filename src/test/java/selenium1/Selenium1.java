@@ -1,3 +1,5 @@
+package selenium1;
+
 
 import java.io.File;
 import org.junit.Test;

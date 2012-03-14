@@ -32,3 +32,28 @@ input.submit, button, select {
     width: 255px;   
     margin-bottom: 10px;
 }
+#save-discard {
+    padding-top: 15px;
+}
+#save-discard button {
+    width: 150px;
+    height: 40px;
+}
+#filter-by-role {
+    padding-bottom: 15px;
+}
+#filter-by-role input {
+    width: 15px;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+th {
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
