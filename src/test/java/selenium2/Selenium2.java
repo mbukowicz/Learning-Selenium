@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class Selenium2 {
 
@@ -31,13 +32,24 @@ public class Selenium2 {
 
         this.waitForAwhile();
         
+        Select roleSelect = new Select(driver.findElement(By.id("role_3")));
+        roleSelect.selectByVisibleText("Moderator");
+        
+        this.waitForAwhile();
+        
         // XPath magic :>        
-        WebElement removeLink = driver.findElement(By.xpath("//table//tr[contains(td[1], '3')]/td/a[text() = 'Remove']"));
+        String removeXpath =
+                "//table" +                    // any table                   
+                "//tr[contains(td[1], '4')]" + // any tr that contains '4' in first td
+                "/td" +                        // a single td
+                "/a[text() = 'Remove']";       // a link containing 'Remove'
+        WebElement removeLink = driver.findElement(By.xpath(removeXpath));
         removeLink.click();
         
         this.waitForAwhile();
         
-        WebElement saveButton = driver.findElement(By.cssSelector("#save-discard button:nth-child(1)"));
+        WebElement saveButton = driver.findElement(
+                By.cssSelector("#save-discard button:first-child"));
         saveButton.click();
         
         this.waitForAwhile();
