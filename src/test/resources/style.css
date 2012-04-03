@@ -57,3 +57,12 @@ th {
     padding: 10px;
     font-weight: bold;
 }
+#info {
+    width: 320px;
+    background: #BFB;
+    color: #555;
+    border: 1px solid #DDD;
+    padding: 5px 10px;
+    margin: 10px 0;
+    display: none;
+}
