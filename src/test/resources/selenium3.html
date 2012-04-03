@@ -4,67 +4,42 @@
         <title>Learning Selenium</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <script type="text/javascript">
-            infoCount = 0;
-            
-            function removeUser(name) {
-                var info = document.getElementById("info");
-                info.innerHTML = name + " was removed.";
-                info.style.display = 'block';
-                infoCount++;
-                //setTimeout('hideInfo(' + infoCount + ')', 3500);
-                
-                var trs = document.getElementsByTagName("tr");
-                for(var i=0; i<trs.length; i++) {
-                    var tr = trs[i];
-                    var currentName = tr.childNodes[1].textContent;
-                    if(currentName == name) {
-                        tr.parentNode.removeChild(tr);
-                    }
-                }
-            }
-            function hideInfo(currentInfoCount) {
-                if(currentInfoCount == infoCount) {
-                    var info = document.getElementById("info");
-                    info.style.display = 'none';
-                }
-            }
-        </script>
+        <script type="text/javascript" src="selenium3.js"> </script>
     </head>
     <body>
         <h1>Learning Selenium</h1>
         <div id="form-example" class="example">
             <div id="info"></div>
-<table id="users">
-    <tr>
-        <th>Name</th>
-        <th>Remove</th>
-    </tr>
-    <tr>
-        <td>John</td>
-        <td>
-            <button onclick="removeUser('John')">
-                Remove
-            </button>
-        </td>
-    </tr>
-    <tr>
-        <td>Bob</td>
-        <td>
-            <button onclick="removeUser('Bob')">
-                Remove
-            </button>
-        </td>
-    </tr>
-    <tr>
-        <td>Frank</td>
-        <td>
-            <button onclick="removeUser('Frank')">
-                Remove
-            </button>
-        </td>
-    </tr>
-</table>
+            <table id="users">
+                <tr>
+                    <th>Name</th>
+                    <th>Remove</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>
+                        <button onclick="removeUser('John')">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>
+                        <button onclick="removeUser('Bob')">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Frank</td>
+                    <td>
+                        <button onclick="removeUser('Frank')">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
